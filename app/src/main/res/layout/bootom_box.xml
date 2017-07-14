@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/bootom_box_rl"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@drawable/bg_bottom"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:id="@+id/bootom_box_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/icon_big" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/bootom_box_iv"
+            android:text="@string/welcome_info"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/main_btn" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bootom_list_box"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bootom_box_rl"
+        android:orientation="vertical"
+        >
+
+        <ListView
+            android:id="@+id/slide_list_lv"
+          style="@style/ListViewSytle">
+
+
+        </ListView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
